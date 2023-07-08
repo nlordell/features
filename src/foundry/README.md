@@ -7,9 +7,7 @@ Foundry is a blazing fast, portable and modular toolkit for Ethereum application
 
 ```json
 "features": {
-    "ghcr.io/nlordell/foundry-feature/foundry:1": {
-        "version": "nightly"
-    }
+    "ghcr.io/nlordell/foundry-feature/foundry:0": {}
 }
 ```
 
