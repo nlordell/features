@@ -1,0 +1,19 @@
+{
+    "name": "Foundry",
+    "id": "foundry",
+    "version": "0.0.1",
+    "description": "Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "nightly"
+            ],
+            "default": "nightly",
+            "description": "Select the version of Foundry to install."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

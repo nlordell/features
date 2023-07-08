@@ -1,9 +1,9 @@
 {
-    "hello": {
+    "version": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "hello": {
-                "greeting": "hello"
+            "foundry": {
+                "version": "nightly-4b0d5d8dc6f1ceb06944524fc0ba59bddc55f60a"
             }
         }
     }
