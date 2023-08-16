@@ -1,6 +1,6 @@
 # Foundry Dev Container Feature
 
-This repository contains a Dev Container feature for installing [Foundry](https://getfoundry.sh/).
+This directory contains a Dev Container feature for installing [Foundry](https://getfoundry.sh/).
 The feature will install `forge`, `cast`, `anvil`, and `chisel` to the resulting Dev Container.
 
 ## Usage
@@ -9,7 +9,7 @@ The feature will install `forge`, `cast`, `anvil`, and `chisel` to the resulting
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/nlordell/foundry-feature/foundry": {}
+        "ghcr.io/nlordell/features/foundry": {}
     }
 }
 ```
@@ -26,7 +26,7 @@ In order to install a specific version of Foundry, use:
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/nlordell/foundry-feature/foundry": {
+        "ghcr.io/nlordell/features/foundry": {
             "version": "nightly-11b08e9bd4ff0c322ec419419be05a0f71d70e1b"
         }
     }
