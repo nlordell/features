@@ -3,7 +3,7 @@
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "foundry": {
-                "version": "nightly-4b0d5d8dc6f1ceb06944524fc0ba59bddc55f60a"
+                "version": "nightly-11b08e9bd4ff0c322ec419419be05a0f71d70e1b"
             }
         }
     }

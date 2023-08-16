@@ -17,7 +17,7 @@ The feature will install `forge`, `cast`, `anvil`, and `chisel` to the resulting
 ```bash
 $ forge --version
 
-forge 0.2.0 (4b0d5d8 2023-07-07T00:04:10.359853565Z)
+forge 0.2.0 (11b08e9 2023-08-16T00:15:24.549820263Z)
 ```
 
 In order to install a specific version of Foundry, use:
@@ -27,7 +27,7 @@ In order to install a specific version of Foundry, use:
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
         "ghcr.io/nlordell/foundry-feature/foundry": {
-            "version": "nightly-4b0d5d8dc6f1ceb06944524fc0ba59bddc55f60a"
+            "version": "nightly-11b08e9bd4ff0c322ec419419be05a0f71d70e1b"
         }
     }
 }
