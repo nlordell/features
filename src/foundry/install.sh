@@ -30,7 +30,7 @@ cat > /usr/local/bin/foundryup << EOF
 #!/bin/sh
 export FOUNDRY_DIR="${ROOT}"
 export PATH="${BIN}:\${PATH}"
-/opt/foundry/bin/foundryup
+/opt/foundry/bin/foundryup "\$@"
 EOF
 chmod +x /usr/local/bin/foundryup
 
