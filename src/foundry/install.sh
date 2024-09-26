@@ -26,12 +26,11 @@ echo "Installing 'foundryup'"
 curl -L https://foundry.paradigm.xyz \
 	| FOUNDRY_DIR="${ROOT}" PATH="${BIN}:${PATH}" bash
 
-VAR_AT='$@'
 cat > /usr/local/bin/foundryup << EOF
 #!/bin/sh
 export FOUNDRY_DIR="${ROOT}"
 export PATH="${BIN}:\${PATH}"
-/opt/foundry/bin/foundryup "${VAR_AT}"
+/opt/foundry/bin/foundryup "\$@"
 EOF
 chmod +x /usr/local/bin/foundryup
 
