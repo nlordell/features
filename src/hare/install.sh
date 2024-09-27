@@ -46,15 +46,17 @@ gitenter scdoc https://git.sr.ht/~sircmpwn/scdoc
 gitexit
 
 gitenter harec https://git.sr.ht/~sircmpwn/harec
-	mkdir -p .build
-	cd .build
-	QBE=/opt/hare/bin/qbe ../configure --prefix=$PREFIX
+	cat configs/linux.mk \
+		| sed 's:x86_64:'$(arch)':' \
+		| sed 's:/usr/local:/opt/hare:' \
+		| sed 's:qbe:/opt/hare/bin/qbe:' \
+		> config.mk
 	make
 	make install
 gitexit
 
 gitenter hare https://git.sr.ht/~sircmpwn/hare
-	cat config.example.mk \
+	cat configs/linux.mk \
 		| sed 's:x86_64:'$(arch)':' \
 		| sed 's:/usr/local:/opt/hare:' \
 		| sed 's:harec:/opt/hare/bin/harec:' \
