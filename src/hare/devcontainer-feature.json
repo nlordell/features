@@ -1,7 +1,7 @@
 {
     "name": "Hare",
     "id": "hare",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Hare is a systems programming language designed to be simple, stable, and robust.",
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
